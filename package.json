@@ -1,0 +1,37 @@
+{
+  "name": "init_react_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/moosin76/init_react-app.git",
+  "author": "kiyong Nam <moosin76@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.js --mode development",
+    "build:dev": "webpack --watch --config webpack.config.js --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production -w",
+    "start:dev": "concurrently \"webpack --watch --config webpack.config.js --mode development\" \"webpack-dev-server\" "
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.4.1",
+    "react-hot-loader": "^4.3.3",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "concurrently": "^3.6.1",
+    "cross-env": "^5.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "style-loader": "^0.21.0"
+  }
+}
